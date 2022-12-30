@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
+// Codewars
+
 namespace Katas.KataClasses;
 
 public static class CardMask
