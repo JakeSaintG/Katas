@@ -1,9 +1,17 @@
+# C Sharp ============
 */bin
 */obj
 */.vs
+# ====================
 
+# Node/TypeScript=====
 */build
 */*/build
 
 */node_modules
 */*/node_modules
+# ====================
+
+# Rust ===============
+*/target
+# ====================
