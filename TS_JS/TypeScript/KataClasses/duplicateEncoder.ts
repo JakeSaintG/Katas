@@ -1,4 +1,4 @@
-//Code Wars
+//Codewars
 
 export function dupEncoder(word: string): string {
 
