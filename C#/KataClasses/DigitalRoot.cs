@@ -12,7 +12,7 @@ public static class DigitalRoot
 {
     public static int ReturnDigitalRoot(long n)
     {
-        var num = n.ToString().ToCharArray().Select(e => Int32.Parse(e.ToString())).Sum();
+        var num = n.ToString().ToCharArray().Select(e => Int32.Parse(e.ToString())).Aggregate((a, b) => a + b);
 
         if (num.ToString().Length > 1)
             return ReturnDigitalRoot(num);
@@ -24,5 +24,6 @@ public static class DigitalRoot
 /*
     Notes:
 
-    I forgot about .Sum() which probably would have have worked just as well.
+    I forgot about .Sum() which would have have worked just as well as Aggregate. It would have also
+    been more readable/self-documenting for someone else.
  */
