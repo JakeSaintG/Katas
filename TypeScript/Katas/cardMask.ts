@@ -1,4 +1,8 @@
-// Codewars
+// Codewars (Vanilla JS Kata done in TS)
+
+/*===================================================================================================
+    Your task is to write a function maskify, which changes all but the last four characters into '#'.
+===================================================================================================*/
 
 export function maskify(cc: string): string
 {

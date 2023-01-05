@@ -1,5 +1,9 @@
 ﻿// Codewars
 
+/*===================================================================================================
+    Your task is to write a function maskify, which changes all but the last four characters into '#'.
+===================================================================================================*/
+
 namespace Katas.KataClasses;
 
 public static class CardMask
