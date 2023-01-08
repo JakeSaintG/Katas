@@ -1,7 +1,11 @@
-import 'package:dart/katas/clock.dart' as clock;
+import 'package:dart/katas/chromosome_check.dart';
+import 'package:dart/katas/clock.dart';
 
 void main(List<String> arguments) {
   
-  print(clock.past(0, 1, 1)); // More in tests
+  // Simple evaluation of Kata solutions; More in tests
+
+  print(past(0, 1, 1)); 
+  print(chromosome_check('XY'));
 
 }

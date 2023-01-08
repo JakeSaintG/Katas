@@ -3,9 +3,8 @@
 /*=========================================================================================
     Clock shows h hours, m minutes and s seconds after midnight
     Your task is to write a function which returns the time since midnight in milliseconds.
-*/
+=========================================================================================*/
 
-//Not pleased with this solution...
 int past(int h, int m, int s) {
   return DateTime.parse('1993-01-27 00:00:00Z')
           .add(Duration(hours: h))
