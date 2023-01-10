@@ -6,7 +6,7 @@
 
 namespace Katas.KataClasses;
 
-public static class CardMask
+public class CardMask
 {
     public static string Maskify(string cc)
     {

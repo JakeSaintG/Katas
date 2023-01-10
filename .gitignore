@@ -1,14 +1,15 @@
 # C Sharp ============
-C#/bin
-*/obj
+C#/obj
+C#/Katas/bin
+C#/Katas/obj
+C#/KataTests/bin
+C#/KataTests/obj
 */.vs
 # ====================
 
 # Node/TypeScript=====
 */build
-
 */node_modules
-
 # ====================
 
 # Rust ===============

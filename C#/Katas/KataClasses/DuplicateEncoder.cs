@@ -8,7 +8,7 @@
 
 namespace Katas.KataClasses;
 
-internal class DuplicateEncoder
+public class DuplicateEncoder
 {
     public static string DuplicateEncode(string word)
     {

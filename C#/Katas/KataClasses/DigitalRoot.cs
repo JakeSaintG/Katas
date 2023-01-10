@@ -8,9 +8,9 @@
 
 namespace Katas.KataClasses;
 
-public static class DigitalRoot
+public class DigitalRoot
 {
-    public static int ReturnDigitalRoot(long n)
+    public int ReturnDigitalRoot(long n)
     {
         var num = n.ToString().ToCharArray().Select(e => Int32.Parse(e.ToString())).Aggregate((a, b) => a + b);
 
