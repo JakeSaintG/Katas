@@ -2,13 +2,22 @@
 # I'm not going to worry about that too much for my Kata "scratch paper".
 # Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy Unrestricted
 
+<#=========================================================================
+This "main" script expects that it is being run from $root/Katas/PowerShell
+=========================================================================#>
+
 # https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview?view=ps-modules
 Invoke-ScriptAnalyzer -Path $(Get-ChildItem -Path ".\KataScripts\*") -IncludeDefaultRules -IncludeRule PSUseOutputTypeCorrectly -Recurse -Severity Error
 
-# dot source all kata scripts
-. ./KataScripts/*
+# Flip to $True to run tests
+if ($True) {
+    # dot source all kata scripts and run tests
+    @( Get-ChildItem -Path '../KataScripts/*' -Filter *.ps1 -Recurse -Depth 1 -ErrorAction SilentlyContinue ) | select-object -ExpandProperty FullName;
+    Import-Module Pester -Passthru
+    Invoke-Pester -Output Detailed .\*.Tests.ps1 
+}
 
-# Get-PhoneNumberValidation("(123) 456-7890");    #true
-# Get-PhoneNumberValidation("(1111)5X5 2345");    #false
-# Get-PhoneNumberValidation("123-456-7890");      #false
 
+# Quick Smoke tests of solutions (not meant to be tests)
+Get-PhoneNumberValidation("(123) 456-7890");
+Get-PhoneNumberValidation("123-456-7890");
