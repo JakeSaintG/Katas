@@ -8,7 +8,7 @@ mod get_age;
 fn main() {
 
     // println!("{}", banjo::banjo::are_you_playing_banjo("JakeSaintG"));
-    // println!("{}", descending_order::descending_order::descending_order(123456789));
+    println!("{}", descending_order::descending_order::descending_order(123456789));
     // println!("{}", dna_to_rna::dna_to_rna::dna_to_rna("TTTT"));
     // println!("{}", get_age::get_age::get_age("7 years old"));
 }

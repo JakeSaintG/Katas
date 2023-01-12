@@ -1,16 +1,28 @@
 pub fn descending_order(x: u64) -> u64 {
-    
-    
-    // let mut bytes = Vec::with_capacity(4 * x.len());
+    let mut v: Vec<i32> = x
+        .to_string()
+        .chars()
+        .into_iter()
+        .map(|x| x.to_string().parse::<i32>().unwrap())
+        .collect();
 
-    // for value in x {
-    //     bytes.extend(&value.to_be_bytes());
-    // }
+    v.sort();
 
-    // println!(bytes);
-
-    return x;
+    let string: String = v.into_iter().rev().map(|x| x.to_string()).collect();
+    return string.parse::<u64>().unwrap();
 }
+
+/*
+    Notes:
+    The below solution is pretty similar to how I went about it but much cleaner.
+
+    use std::iter::FromIterator;
+    fn descending_order(x: u64) -> u64 {
+        let mut result = x.to_string().chars().collect::<Vec<char>>();
+        result.sort_by(|a, b| b.cmp(a));
+        String::from_iter(result).parse::<u64>().unwrap()
+    }
+*/
 
 #[cfg(test)]
 mod tests {
