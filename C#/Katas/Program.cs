@@ -7,5 +7,5 @@
 //Console.WriteLine(DuplicateEncoder.DuplicateEncode("Success"));
 
 // Kata didn't want it to be static... Who am I to say no?
-//DigitalRoot dr = new DigitalRoot();
-//Console.WriteLine(dr.ReturnDigitalRoot(493193));
+DigitalRoot dr = new DigitalRoot();
+Console.WriteLine(dr.ReturnDigitalRoot(493193));
