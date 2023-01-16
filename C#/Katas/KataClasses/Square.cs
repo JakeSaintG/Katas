@@ -11,3 +11,11 @@ public static class Square
 {
     public static int SquareSum(int[] numbers) => numbers.Select(i => i*i).Sum();
 }
+
+/*
+    Notes:
+
+    I didn't realize that Sum() could map too. Neat:
+
+    public static int SquareSum(int[] n) => n.Sum(i => i * i);
+ */
