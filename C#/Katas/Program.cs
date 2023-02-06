@@ -12,4 +12,6 @@
 
 //Console.WriteLine(Smash.SmashSentance(new string[] { "hello", "world" }));
 
-Console.WriteLine(Square.SquareSum(new int[] { 1, 2, 3, 4, 5 }));
+// Console.WriteLine(Square.SquareSum(new int[] { 1, 2, 3, 4, 5 }));
+
+Console.WriteLine(Case.ToCamelCase("the_stealth_warrior"));
