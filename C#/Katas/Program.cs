@@ -14,4 +14,6 @@
 
 // Console.WriteLine(Square.SquareSum(new int[] { 1, 2, 3, 4, 5 }));
 
-Console.WriteLine(Case.ToCamelCase("the_stealth_warrior"));
+//Console.WriteLine(Case.ToCamelCase("the_stealth_warrior"));
+
+Console.WriteLine(SpinWords.Spin("Hey fellow warriors")); 
