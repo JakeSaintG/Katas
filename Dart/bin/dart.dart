@@ -4,6 +4,7 @@ import 'package:dart/katas/duplicate_count.dart';
 import 'package:dart/katas/longest.dart';
 import 'package:dart/katas/min_sum.dart';
 import 'package:dart/katas/multiples_of_3_or_5.dart';
+import 'package:dart/katas/spin_words.dart';
 import 'package:dart/katas/square.dart';
 
 void main(List<String> arguments) {
@@ -19,5 +20,7 @@ void main(List<String> arguments) {
 
   // print(minSum([5, 4, 2, 3]));
 
-  print(mul_of_3_or5(10));
+  // print(mul_of_3_or5(10));
+
+  print(spin_words("Hey fellow warriors"));
 }
