@@ -1,3 +1,5 @@
+# Get-ChildItem -Path "./../../Katas/PowerShell/KataScripts/Get-PhoneNumberValidation.ps1"
+
 Describe 'Test Cases' {
 	It 'Should be true' {
 		Get-PhoneNumberValidation("(123) 456-7890") | Should -Be $true;
