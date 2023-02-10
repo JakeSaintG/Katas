@@ -6,6 +6,7 @@ import 'package:dart/katas/min_sum.dart';
 import 'package:dart/katas/multiples_of_3_or_5.dart';
 import 'package:dart/katas/spin_words.dart';
 import 'package:dart/katas/square.dart';
+import 'package:dart/katas/to_hex.dart';
 
 void main(List<String> arguments) {
   // Simple evaluation of Kata solutions; More in tests
@@ -22,5 +23,9 @@ void main(List<String> arguments) {
 
   // print(mul_of_3_or5(10));
 
-  print(spin_words("Hey fellow warriors"));
+  // print(spin_words("Hey fellow warriors"));
+
+  print(to_hex(255, 255, 255));
+  print(to_hex(148, -20, 211));
+  print(to_hex(212, 53, 12));
 }
