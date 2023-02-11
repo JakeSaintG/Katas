@@ -3,6 +3,7 @@ mod banjo;
 mod dna_to_rna;
 mod get_age;
 mod break_chocolate;
+mod count_duplicates;
 
 // Used for quick answer checks, more thorough evaluations in tests in mods
 
@@ -13,5 +14,7 @@ fn main() {
     // println!("{}", dna_to_rna::dna_to_rna::dna_to_rna("TTTT"));
     // println!("{}", get_age::get_age::get_age("7 years old"));
 
-    println!("{}", break_chocolate::break_chocolate::break_chocolate(2, 3));
+    // println!("{}", break_chocolate::break_chocolate::break_chocolate(2, 3));
+    println!("{}", count_duplicates::count_duplicates::count_duplicates("abcdea"));
+
 }
