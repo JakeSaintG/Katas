@@ -22,3 +22,7 @@ C#/KataTests/obj
 */.packages
 */build/
 # ====================
+
+# Python =============
+Python/KataScripts/__pycache__
+# ====================

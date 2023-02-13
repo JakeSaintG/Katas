@@ -1,2 +1,3 @@
-def test(nice):
-    return "nice: %" % nice
+def foo(x):
+    return x + x
+

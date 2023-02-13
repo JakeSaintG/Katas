@@ -1,5 +1,6 @@
-import test
+from KataScripts.test import foo
+from KataScripts.square import square_sum
 
-print("NICE")
-
-nice("test")
+# print(foo(3))
+print(square_sum([-1,0,1]))
+print(square_sum([-1,-2]))
