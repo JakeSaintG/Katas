@@ -25,5 +25,5 @@ if ($True) {
 # $test = Get-MultiplesOf3Or5 -Value 200
 # Write-Host $test;
 
-$test = Get-MultiplesOf3Or5 -Value 200
+$test = Convert-StringToCamelCase -String "the_stealth_warrior"
 Write-Host $test;
