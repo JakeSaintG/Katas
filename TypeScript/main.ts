@@ -2,6 +2,7 @@ import { maskify, maskify2ElectricBoogaloo } from "./Katas/cardMask";
 import { descendingOrder } from "./Katas/descendingOrder";
 import { digitalRoot, digitalRoot2ElectricBoogaloo } from "./Katas/digitalRoot";
 import { dupEncoder, dupEncoder2ElectricBoogaloo } from "./Katas/duplicateEncoder";
+import { spinWords } from "./Katas/spinWords";
 
 // Used for quick answer checks, more thorough evaluations in KataTests
 
@@ -15,3 +16,5 @@ import { dupEncoder, dupEncoder2ElectricBoogaloo } from "./Katas/duplicateEncode
 
 // console.log(digitalRoot(493193));
 // console.log(digitalRoot2ElectricBoogaloo(493193));
+
+console.log(spinWords("Hey fellow warriors"));

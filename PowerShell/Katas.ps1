@@ -22,6 +22,8 @@ if ($True) {
 # Write-Host $test;
 # $test1 = Get-PhoneNumberValidation("123-456-7890");
 # Write-Host $test1;
+# $test = Get-MultiplesOf3Or5 -Value 200
+# Write-Host $test;
 
 $test = Get-MultiplesOf3Or5 -Value 200
 Write-Host $test;
