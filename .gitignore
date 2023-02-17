@@ -25,4 +25,14 @@ C#/KataTests/obj
 
 # Python =============
 Python/KataScripts/__pycache__
+.installed.cfg
+bin
+develop-eggs
+dist
+downloads
+eggs
+parts
+src/*.egg-info
+lib
+lib64
 # ====================
