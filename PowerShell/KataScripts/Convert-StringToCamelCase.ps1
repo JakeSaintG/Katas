@@ -14,7 +14,6 @@ function Convert-StringToCamelCase {
 
     $textInfo = (Get-Culture).TextInfo
     $str = $textInfo.ToTitleCase($String.Replace('-', ' ').Replace('_', ' ').ToLower());
-    Write-host $str;
-
+    
     return ($c + $str[1..($str.length)]).Replace(" ", ""); 
 } 
