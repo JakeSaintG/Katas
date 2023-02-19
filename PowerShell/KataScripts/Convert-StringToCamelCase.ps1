@@ -1,10 +1,20 @@
 function Convert-StringToCamelCase {
     [CmdletBinding()]
     [OutputType([string])]
+    [AllowEmptyString()]
     Param(
-        [Parameter(Mandatory = $true)] [string] $String
+        [Parameter(Mandatory = $false)] [string] $String
     )
 
-    return ""
+    if ($String -eq ""){
+        return "";
+    }
 
-}
+    $c = ($String.ToCharArray() | Select-Object -First 1);
+
+    $textInfo = (Get-Culture).TextInfo
+    $str = $textInfo.ToTitleCase($String.Replace('-', ' ').Replace('_', ' ').ToLower());
+    Write-host $str;
+
+    return ($c + $str[1..($str.length)]).Replace(" ", ""); 
+} 
