@@ -1,5 +1,6 @@
 import 'package:dart/katas/chromosome_check.dart';
 import 'package:dart/katas/clock.dart';
+import 'package:dart/katas/desc_order.dart';
 import 'package:dart/katas/duplicate_count.dart';
 import 'package:dart/katas/longest.dart';
 import 'package:dart/katas/min_sum.dart';
@@ -30,5 +31,7 @@ void main(List<String> arguments) {
   // print(to_hex(148, -20, 211));
   // print(to_hex(212, 53, 12));
 
-  print(smash(["Hello", "world"]));
+  // print(smash(["Hello", "world"]));
+
+  print(descendingOrder(5432326));
 }
