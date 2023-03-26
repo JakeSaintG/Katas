@@ -9,6 +9,7 @@ import 'package:dart/katas/smash.dart';
 import 'package:dart/katas/spin_words.dart';
 import 'package:dart/katas/square.dart';
 import 'package:dart/katas/to_hex.dart';
+import 'package:dart/katas/pyramid.dart';
 
 void main(List<String> arguments) {
   // Simple evaluation of Kata solutions; More in tests
@@ -33,5 +34,8 @@ void main(List<String> arguments) {
 
   // print(smash(["Hello", "world"]));
 
-  print(descendingOrder(5432326));
+  // print(descendingOrder(5432326));
+
+  print(pyramid(0));
+  print(pyramid(5));
 }
